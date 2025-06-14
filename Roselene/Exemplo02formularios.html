@@ -1,0 +1,106 @@
+<!DOCTYPE html 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formularios</title>
+</head>
+
+<body bgcolor="beige">
+    <h1>Exemplos de formularios</h1>
+<br>
+<br>
+    <form action="POST" ACTION="/cgi-bin/post-query">
+        Qual o seu nome?
+        <input type="text" name="Primeiro_nome" value="carlos" ></input>
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <form method="post" action="/cgi-bin/post-query" >
+        infome sua senha de acesso
+        <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <form method="post" action="/cgi-bin/post-query" >
+        voce nao pode visualizar nada aqui embaixo.
+        <input type="hidden" name="nome_oculto" value="form12">
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <form method="post" action="/cgi-bin/post-query" >
+        por favor, escreva aqui suas sugestões, duvidas e criticas
+        <textarea name="critica" rows="3" cols="20">
+Gostaria de obter mais infromações sobre
+este servidor, Grato.
+        </textarea>
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <form method="post" action="/cgi-bin/post-query" >
+        onde você pretende fazer turismo nas ferias?
+        <select name="lugares_para_ver">
+            <option> Fortaleza </option>
+            <option value="sul">Florianopolis ou Porto Alegre</option>
+            <option> Rio de Janeiro </option> 
+            <option selected>Brasilia</option>
+            <option value="Amazonas">Manaus</option>
+        </select>
+    </form>
+
+<br>
+<br>
+<br>
+<br>
+    Que felicidades de acomodação voce deseja?<BR>
+        <select name="opcional" multiple size="5">
+            <option televisao></option>
+            <option value="casal" selected>Cama de Casal </option>>
+            <option ar condicionado></option>
+            <option Fax></option>
+            <option selected>modem V.34</option>>
+        </select>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <form action="action_page.php">
+        <input type="checkbox" name="vehicle1" value="Bike">/ i have a bike
+        <br>
+        <input type="checkbox" name="vehicle2" value="car">/ i have a car
+        <br>
+        <input type="checkbox" name="vehicle3" value="Boat">/ i have a Boat
+        <br>
+        <input type="submit" value="Submit">/
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <form action="action_page.php">
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="Male">/ Mele
+        <input type="radio" name="gender" value="female">/ Female
+        <input type="radio" name="gender" value="other">/ Other
+
+        <p>Please select your age:</p>
+        <input type="radio" name="age" value="30">/  0 - 30<br/>
+        <input type="radio" name="age" value="90">/ 31 - 60<br/>
+        <input type="radio" name="age" value="100">/ 61 - 100</br>
+        <input type="submit" value="Submit">/
+    </form>
+
+
+<address>Eberth - estudante senai</address>
+</body>
+</html>
