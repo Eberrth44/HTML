@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"  />
+		<title></title>
+	</head>
+	<body bgcolor="beige">
+
+
+
+		<header>
+			<h1 class="logo"> </h1>
+			<p> Descripion</p>
+		</header>
+		
+		<nav> 
+			<section class="recent_news">
+				<article class="news_item">
+					<h1> hello world </h1>
+						<p> ...... </p>
+				<article>
+			</section>
+					
+		</nav>	
+		
+		<section class="top_10">
+			<article>
+				<header>
+					<h1> news Title </h1>
+					<p> News content </p>
+			</article>
+		</section>
+
+		<aside>
+			<section class="Recent Commentes"> 
+				<article>
+					<h1> @author </h1>
+					<p> comments text </p>
+				</article>
+			</section>
+		</side>
+	</body>
+
+</html>
