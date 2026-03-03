@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio da Orla - Cadeiras Inteligentes</title>
+    <style>
+        /* RESET BÁSICO */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: #f4f9f9; color: #333; }
+
+        /* HEADER */
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* LOGO DA EMPRESA */
+        .logo {
+            height: 50px;
+            width: auto;
+            background-color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+
+        header h1 { 
+            font-size: 1.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+
+        /* HERO SECTION (BANNER) */
+        .hero {
+            /* COLE_O_LINK_DA_IMAGEM_DE_FUNDO_AQUI - Opcional, pode manter a padrão */
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h2 { font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-top: 10px; }
+
+        /* CONTAINER DE PRODUTOS */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0077b6;
+            font-size: 1.8rem;
+        }
+
+        /* GRID DE PRODUTOS */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD DO PRODUTO */
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #e0f7fa;
+        }
+
+        .product-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-title { font-size: 1.2rem; margin-bottom: 10px; font-weight: bold; color: #023e8a; }
+        .product-desc { font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1; }
+        
+        .price-container { margin: 10px 0; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 0.95rem; margin-right: 10px; }
+        .new-price { color: #e63946; font-weight: bold; font-size: 1.5rem; }
+        
+        .btn-buy {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 90%;
+            margin: 0 auto;
+            transition: background 0.3s;
+        }
+        .btn-buy:hover { background-color: #023e8a; }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 0.85rem;
+        }
+        
+        /* Badge de destaque */
+        .badge {
+            background-color: #e63946;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+        <img src="Logo.jpeg" alt="Logo BeachTech" class="logo">
+        <div>
+            <h1>Refúgio da Orla</h1>
+            <p style="font-size: 0.9rem; opacity: 0.0;">Tecnologia e conforto na praia</p>
+        </div>
+    </header>
+
+    <style>
+        /* ... outros estilos ... */
+        
+        /* LOGO DA EMPRESA - MODIFICADO */
+        .logo {
+            height: 50px;
+            width: auto;
+            /* background-color: white;  <-- REMOVA OU COMENTE ESTA LINHA */
+            /* padding: 5px 15px;      <-- REMOVA OU COMENTE ESTA LINHA para alinhar melhor */
+            /* border-radius: 5px;    <-- REMOVA OU COMENTE ESTA LINHA */
+            object-fit: contain;
+        }
+
+        /* ... outros estilos ... */
+    </style>
+
+    <div class="hero">
+        <div>
+            <h2>Cadeiras Inteligentes</h2>
+            <p>Painel solar • USB • Som Bluetooth • Design Ultra Leve</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="section-title">Linha Premium - Opção 1</h3>
+        
+        <div class="products-grid">
+            
+            <!-- PRODUTO 1 -->
+            <div class="product-card">
+                <!-- COLE_O_LINK_DA_IMAGEM_PRODUTO_1_AQUI -->
+                <img src="ca1.png" alt="Cadeira Tech Básica" class="product-img">
+                <div class="product-info">
+                    <span class="badge">MAIS VENDIDA</span>
+                    <div class="product-title">Cadeira Tech Basic</div>
+                    <p class="product-desc">Estrutura em alumínio, painel solar e porta USB integrada.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$ 499,90</span>
+                        <span class="new-price">R$ 379,90</span>
+                    </div>
+                    <button class="btn-buy">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 2 -->
+            <div class="product-card">
+                <!-- COLE_O_LINK_DA_IMAGEM_PRODUTO_2_AQUI -->
+                <img src="ca2.png" alt="Cadeira com Suporte" class="product-img">
+                <div class="product-info">
+                    <span class="badge">NOVA</span>
+                    <div class="product-title">Cadeira Tech Plus</div>
+                    <p class="product-desc">Com suporte de bebidas térmico e apoio para smartphone.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$ 599,90</span>
+                        <span class="new-price">R$ 449,90</span>
+                    </div>
+                    <button class="btn-buy">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 3 -->
+            <div class="product-card">
+                <!-- COLE_O_LINK_DA_IMAGEM_PRODUTO_3_AQUI -->
+                <img src="ca3.png" alt="Cadeira Reclinável" class="product-img">
+                <div class="product-info">
+                    <div class="product-title">Cadeira Tech Recline</div>
+                    <p class="product-desc">Reclinação infinita com travas ergonômicas e tecido respirável.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$ 649,90</span>
+                        <span class="new-price">R$ 519,90</span>
+                    </div>
+                    <button class="btn-buy">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 4 -->
+            <div class="product-card">
+                <!-- COLE_O_LINK_DA_IMAGEM_PRODUTO_4_AQUI -->
+                <img src="ca4.png" alt="Cadeira Dobrável" class="product-img">
+                <div class="product-info">
+                    <span class="badge">-20% OFF</span>
+                    <div class="product-title">Cadeira Tech Fold</div>
+                    <p class="product-desc">Ultra compacta, dobra em 3 segundos e cabe em qualquer mala.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$ 459,90</span>
+                        <span class="new-price">R$ 367,90</span>
+                    </div>
+                    <button class="btn-buy">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 5 -->
+            <div class="product-card">
+                <!-- COLE_O_LINK_DA_IMAGEM_PRODUTO_5_AQUI -->
+                <img src="ca5.png" alt="Cadeira Premium" class="product-img">
+                <div class="product-info">
+                    <span class="badge">LANÇAMENTO</span>
+                    <div class="product-title">Cadeira Tech Pro</div>
+                    <p class="product-desc">Edição limitada com som Bluetooth e carregamento wireless.</p>
+                    <div class="price-container">
+                        <span class="old-price">R$ 899,90</span>
+                        <span class="new-price">R$ 749,90</span>
+                    </div>
+                    <button class="btn-buy">Ver Detalhes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BeachTech. Todos os direitos reservados.</p>
+        <p style="margin-top: 8px; opacity: 0.7;">Projeto acadêmico - Aula de Web Design</p>
+    </footer>
+
+</body>
+</html>
